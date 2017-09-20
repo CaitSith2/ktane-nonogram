@@ -297,6 +297,7 @@ public class NonogramModule : MonoBehaviour {
         Debug.LogFormat("[Nonogram #{0}] Generated solution was: {1}", _moduleId, string.Join(", ", input.ToArray()));
     }
 
+    string TwitchHelpMessage = "Toggle the colors with !{0} toggle. Switch between dot and fill with !{0} dot. Mark the squares with !{0} a1 b2 b3 c2 c3. (a-e is columns, 1-5 is rows) Submit your answer with !{0} submit";
     KMSelectable[] ProcessTwitchCommand(string command) {
         command = command.ToUpperInvariant().Trim();
 
